@@ -1,0 +1,3 @@
+[submodule "medium-editor-insert-plugin"]
+	path = medium-editor-insert-plugin
+	url = https://github.com/oohaysmlm/medium-editor-insert-plugin.git

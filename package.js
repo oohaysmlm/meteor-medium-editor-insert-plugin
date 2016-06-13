@@ -12,13 +12,6 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom('1.3.2.4');
-  api.use('ecmascript');
-  api.mainModule('medium-editor-insert-plugin.js');
-});
-
-Package.onTest(function(api) {
-  api.use('ecmascript');
-  api.use('tinytest');
-  api.use('skehoe1989:medium-editor-insert-plugin');
-  api.mainModule('medium-editor-insert-plugin-tests.js');
+  api.use(['ecmascript','jquery','mediumeditor:mediumeditor@5.2.0']);
+  api.mainModule('medium-editor-insert-plugin/dist/js/medium-editor-insert-plugin.js', 'client');
 });
